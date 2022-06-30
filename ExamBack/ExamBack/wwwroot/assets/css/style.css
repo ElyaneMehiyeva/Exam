@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header .navbar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}
+header .navbar .container .navbar-brand {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: rgb(56, 64, 70);
+}
+header .navbar .container ul li .active {
+  color: rgb(52, 152, 219);
+}
+header .navbar .container ul li a {
+  font-size: 16px;
+  color: rgb(79, 90, 98);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-right: 10px;
+}
+header .navbar .container ul li a:hover {
+  color: rgb(52, 152, 219);
+}
+header .navbar .container .icon {
+  margin-left: 15px;
+  font-size: 16px;
+}
+header .navbar .container .icon a {
+  color: rgb(79, 90, 98);
+  margin-left: 5px;
+}
+header .navbar .container .icon a:hover {
+  color: rgb(52, 152, 219);
+}
+header .welcome-container {
+  width: 100%;
+  height: 620px;
+  background-image: url(..//img/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .welcome-container h1 {
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+header .welcome-container p {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+header .welcome-container button {
+  padding: 15px 40px;
+  font-size: 13px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  background-color: rgb(52, 152, 219);
+  color: white;
+  letter-spacing: 2px;
+}
+
+main .what-container {
+  padding: 50px;
+}
+main .what-container .text {
+  text-align: center;
+}
+main .what-container .text p {
+  margin-top: 25px;
+  color: rgb(68, 68, 146);
+}
+main .what-container .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .what-container .container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  margin-left: 5px;
+  color: black;
+}
+main .what-container .container .box .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(52, 152, 219);
+  background-color: rgba(52, 152, 219, 0.2);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+main .what-container .container .box .text {
+  color: black;
+  margin-top: 10px;
+}
+main .what-container .container .box .text h4:hover {
+  color: rgb(52, 152, 219);
+  cursor: pointer;
+}
+main .about-container {
+  padding: 50px;
+}
+main .about-container .container {
+  width: 100%;
+  display: flex;
+}
+main .about-container .container .left {
+  width: 50%;
+}
+main .about-container .container .left img {
+  width: 630px;
+  height: 450px;
+  object-fit: cover;
+}
+main .about-container .container .right {
+  width: 50%;
+}
+main .about-container .container .right h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+}
+main .about-container .container .right p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+main .about-container .container .right .check {
+  display: flex;
+}
+main .about-container .container .right .check i {
+  color: rgb(52, 152, 219);
+  margin-right: 10px;
+}
+main .about-container .container .right .check p {
+  font-size: 15px;
+}
+main .about-container .container .right .box-container {
+  display: flex;
+  padding-top: 20px;
+}
+main .about-container .container .right .box-container .box i {
+  font-size: 45px;
+  color: rgb(52, 152, 219);
+}
+main .about-container .container .right .box-container .box h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+main .about-container .container .right .box-container .box P {
+  font-size: 15px;
+  color: grey;
+  font-family: "Open Sans", sans-serif;
+}
+main .scroll-container {
+  padding: 50px;
+}
+main .scroll-container .container {
+  width: 100%;
+  display: flex;
+}
+main .scroll-container .container .left {
+  width: 50%;
+  margin-left: 15px;
+}
+main .scroll-container .container .left .scroll {
+  margin-top: 30px;
+}
+main .scroll-container .container .left .scroll p {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+main .scroll-container .container .left .scroll div {
+  margin-top: 10PX;
+  height: 8px;
+  background-color: rgba(194, 194, 194, 0.774);
+  position: relative;
+}
+main .scroll-container .container .left .scroll div span {
+  position: absolute;
+  height: 8px;
+  background-color: rgb(52, 152, 219);
+}
+main .scroll-container .container .right {
+  width: 50%;
+  margin-left: 15px;
+}
+main .scroll-container .container .right .scroll {
+  margin-top: 30px;
+}
+main .scroll-container .container .right .scroll p {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+main .scroll-container .container .right .scroll div {
+  margin-top: 10PX;
+  height: 8px;
+  background-color: rgba(194, 194, 194, 0.774);
+  position: relative;
+}
+main .scroll-container .container .right .scroll div span {
+  position: absolute;
+  height: 8px;
+  background-color: rgb(52, 152, 219);
+}
+main .icon-container {
+  padding: 20px;
+}
+main .icon-container .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .icon-container .container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .icon-container .container .box i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18/px;
+  background-color: rgb(52, 152, 219);
+  color: white;
+}
+main .icon-container .container .box span {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 15px;
+}
+main .icon-container .container .box p {
+  font-size: 13px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 5px;
+}
+main .services-container {
+  padding: 50px;
+}
+main .services-container .text {
+  text-align: center;
+}
+main .services-container .text h3 {
+  font-family: "Raleway", sans-serif;
+}
+main .services-container .text p {
+  font-family: "Open Sans", sans-serif;
+}
+main .services-container .container {
+  padding-top: 50px;
+}
+main .services-container .container .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+main .services-container .container .item .box {
+  display: flex;
+  mask-repeat: 20px;
+}
+main .services-container .container .item .box .icon {
+  font-size: 20px;
+  color: rgb(52, 152, 219);
+}
+main .services-container .container .item .box .icon i {
+  font-size: 40px;
+  margin-right: 20px;
+}
+main .services-container .container .item .box .text-box h3 {
+  font-size: 18px;
+}
+main .services-container .container .item .box .text-box h3:hover {
+  color: rgb(52, 152, 219);
+  cursor: pointer;
+}
+main .services-container .container .item .box .text-box p {
+  font-size: 15px;
+}
+main .team-container {
+  padding: 50px;
+}
+main .team-container .container .text {
+  text-align: center;
+}
+main .team-container .container .text h1 {
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+}
+main .team-container .container .text p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+main .team-container .container .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .team-container .container .card-container .card {
+  margin-top: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  border: 0.1px solid rgba(128, 128, 128, 0.199);
+}
+main .team-container .container .card-container .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+main .team-container .container .card-container .card h5 {
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+}
+main .team-container .container .card-container .card span {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+}
+main .team-container .container .card-container .card p {
+  text-align: center;
+  color: grey;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+}
+main .team-container .container .card-container .card .icon a {
+  text-decoration: none;
+  font-size: 20px;
+  color: grey;
+  margin-right: 7px;
+}
+main .team-container .container .card-container .card .icon a:hover {
+  color: rgb(52, 152, 219);
+}
+main .contact-container {
+  padding: 50px;
+}
+main .contact-container .text {
+  text-align: center;
+}
+main .contact-container .text h3 {
+  font-family: "Raleway", sans-serif;
+}
+main .contact-container .text p {
+  font-family: "Open Sans", sans-serif;
+}
+main .contact-container .container {
+  display: flex;
+  justify-content: center;
+}
+main .contact-container .container .email-container {
+  display: flex;
+}
+main .contact-container .container .email-container .item {
+  display: flex;
+  padding: 20px 50px;
+}
+main .contact-container .container .email-container .item .icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(52, 152, 219, 0.377);
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(52, 152, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+main .input-container .container .input-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .input-container .container .input-1 input {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 20px;
+}
+main .input-container .container .input-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .input-container .container .input-2 input {
+  margin-top: 20px;
+  width: 1024px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 20px;
+}
+main .input-container .container .textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .input-container .container .textarea textarea {
+  margin-top: 20px;
+  width: 1024px;
+  height: 100px;
+  padding: 10px;
+  margin-right: 20px;
+}
+main .input-container .button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .input-container .button button {
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(52, 152, 219);
+  color: white;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 50px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .item-1 p {
+  margin-bottom: -5px;
+  color: grey;
+}
+footer .container .item-1 span {
+  margin-top: 10px;
+  display: flex;
+  font-weight: 800;
+  color: grey;
+}
+footer .container .item-1 span p {
+  font-weight: normal;
+}
+footer .container .item-2 .icon {
+  display: flex;
+  color: rgb(52, 152, 219);
+  font-size: 12px;
+}
+footer .container .item-2 .icon p {
+  color: grey;
+  margin-left: 5px;
+}
+footer .bottom-container .container .text-item {
+  margin-top: 50px;
+}
+footer .bottom-container .container .text-item p {
+  font-size: 15px;
+}
+footer .bottom-container .container .icon {
+  display: flex;
+}
+footer .bottom-container .container .icon a {
+  font-size: 15px;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(52, 152, 219);
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  header .welcome-container {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  header .welcome-container h1 {
+    font-size: 40px;
+  }
+  header .welcome-container p {
+    font-size: 18px;
+  }
+
+  main .what-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .what-container .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .what-container .container .box {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .about-container .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  main .about-container .container .left {
+    width: 100%;
+  }
+  main .about-container .container .left img {
+    padding-left: 10px;
+  }
+  main .about-container .container .right {
+    width: 100%;
+    margin-top: 20px;
+  }
+  main .about-container .container .right .box-container {
+    display: flex;
+    flex-direction: column;
+  }
+  main .scroll-container {
+    padding: 10px;
+  }
+  main .scroll-container .container {
+    display: flex;
+    flex-direction: column;
+  }
+  main .scroll-container .container .left {
+    width: 100%;
+  }
+  main .scroll-container .container .right {
+    width: 100%;
+  }
+  main .services-container .container .item {
+    display: flex;
+    flex-direction: column;
+  }
+  main .services-container .container .item .box {
+    margin-top: 40px;
+  }
+  main .team-container .container .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  main .team-container .container .card-container .card img {
+    width: 250px;
+    height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
